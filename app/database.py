@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from app.config import settings
-from app.models import Base, Patient
+from app.models import Base
 import os
 
 # Add SSL mode for Render if not present
@@ -37,4 +37,5 @@ def init_db():
 
 if __name__ == "__main__":
     init_db()
+
 
